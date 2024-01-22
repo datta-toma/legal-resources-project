@@ -1,11 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>legal resources webpage</title>
+    <!-- tailwind and dasiy ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Poppins&display=swap" rel="stylesheet">
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/8f11c76ddb.js" crossorigin="anonymous"></script>
+    <!-- tailwind custom classes -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+       <style>
+        .font-poppins{
+            font-family: 'Poppins', sans-serif;
+        }
+        .font-EB-Garamond{
+            font-family: 'EB Garamond', serif;
+        }
+    </style>
 </head>
-<body>
-    <h1>hello</h1>
+<body class="font-poppins ">
+   <header class="md:container md:mx-auto">
+    <nav>
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Home</a></li>
+                  <li><a>Services<i class="fa-solid fa-angle-right"></i></a></li>
+                  <li><a>Cases<i class="fa-solid fa-angle-right"></i></a></li>
+                  <li><a>Blog<i class="fa-solid fa-angle-right"></i></a></li>
+                  <li><a>Contact Us<i class="fa-solid fa-angle-right"></i></a></li>
+                </ul>
+              </div>
+              <img class="w-12" src="./images/business.png">
+              <a class="btn btn-ghost text-3xl font-EB-Garamond ">Justice</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                <li><a>Services<i class="fa-solid fa-angle-right"></i></a></li>
+                  <li><a>Cases<i class="fa-solid fa-angle-right"></i></a></li>
+                  <li><a>Blog<i class="fa-solid fa-angle-right"></i></a></li>
+                  <li><a>Contact Us<i class="fa-solid fa-angle-right"></i></a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <!-- <a class="btn">Button</a> -->
+              <button class="btn btn-active bg-slate-500 text-white">Free Consultation</button>
+            </div>
+          </div>
+    </nav>
+    <div class="md:container md:mx-auto">
+        <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full ">
+              <img src="./images/banner.png" class="w-full h-96 lg:h-auto" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <div>
+                    <h1 class="ml-7 lg:ml-60 text-3xl lg:text-6xl  font-medium text-center font-EB-Garamond text-white">We Provide Effective<br> Legal Solutions</h1>
+                    <p class=" ml-3 lg:ml-60 pt-5  text-sm lg:text-lg text-center text-white">There are many variations of passages of Lorem Ipsum available, but the majority<br> have suffered alteration in some form, by injected humour.</p>
+                    <div class="pt-8 ml-4 lg:ml-96">
+                        <button class="btn btn-wide">Search your services</button>
+                        <button class="btn bg-slate-400 text-white">Search</button>
+                    </div>
+                </div>
+              </div>
+            </div> 
+             
+            
+            
+          </div>
+    </div>
+   </header>
+
+   <main></main>
+
+   <footer></footer>
 </body>
 </html>
